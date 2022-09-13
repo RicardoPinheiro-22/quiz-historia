@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz G. Vargas</title>
+    <link rel="stylesheet" href="quiz_2.css">
+</head>
+<body>
+    <main class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <div class="alinhar">
+            <span id="numquestion"></span>
+            <h2 id="questao">Questão</h2>
+            </div>
+            <h4 id="com"></h4>
+            <button id="a" value="1A">A</button>
+
+            <button id="b" value="1B">B</button>
+
+            <button id="c" value="1C">C</button>
+
+            <button id="d" value="1D">D</button>
+
+            <button id="e" value="1E">E</button>
+            <div class="numeros">
+            <input type="number" name="" placeholder="Digite o número da opção" id="number">
+            </div>
+        </div>
+        <div class="botoes">
+            <button onclick="analisar()" class="botao">Responder</button>
+            <button onclick="analisando()" class="botaos">Responder</button>
+            <button onclick="analisarmos()" class="botaoss">Responder</button>
+            <a href="https://project-historia.vercel.app/equipe">
+            <button onclick="encerrar()" class="botaosss">Ir para o Site</button>
+            </a>
+            <a href="">
+            <button onclick="reiniciar()" class="reiniciar">Reiniciar o Quiz</button>
+            </a>
+        </div>
+        
+
+        <div class="pontos">
+            
+        <h3 id="totaus">Total de Pontos</h3>
+        <h3 class="totals">Sua pontuação foi</h3>
+            <h3 id="total">0</h2>
+        </div>
+    </main>
+    
+    <audio preload src="quiz_assets_positive.mp3" id='somAcerto'></audio>
+    <audio preload src="quiz_assets_negative.mp3" id='somErro'></audio>
+    <script src="../controleer/quiz.js"></script>
+</body>
+</html>

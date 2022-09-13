@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(18, 22, 45), rgb(33, 52, 116));
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.quiz-container{
+    background-color: #1a1d29;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(175, 173, 173, 0.3);
+    width: 800px;
+    overflow: hidden;
+    margin: 1rem;
+    color: #fff;
+}
+
+.alinhar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 2.5rem;
+}
+
+.quiz-header{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#numquestion{
+    font-size: 3rem;
+}
+
+.numeros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#number{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.totals{
+    display: none;
+}
+
+.botaos,
+.botaoss,
+.botaosss,
+.reiniciar{
+    display: none;
+}
+
+.pontos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+h2{
+    padding: rem;
+    text-align: center;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+h4{
+    font-size: 0.7rem;
+}
+
+button{
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-image: linear-gradient(to right, #0ad28d 0%, #2457d0 100%);
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(4, 228, 115, 1);
+}
+
+@media (max-width: 420px){
+    #questao{
+        font-size: 0.75rem;
+    }
+    #com{
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 360px){
+    #questao{
+        font-size: 0.6rem;
+    }
+    #com{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 320px){
+    #questao{
+        font-size: 0.5rem;
+    }
+    #com{
+        font-size: 0.45rem;
+    }
+
+    #numquestion{
+        font-size: 1.5rem;
+    }
+
+    .quiz-header{
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 565px){
+    button{
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 450px){
+    button{
+        padding: 0.4rem;
+        font-size: 0.755rem;
+    }
+}
